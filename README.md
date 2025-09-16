@@ -5,7 +5,7 @@ A responsive product landing page built with **HTML and CSS** as part of the fre
 ---
 
 ## 🔗 Live Demo
-[View on GitHub Pages](https://your-username.github.io/product-landing-page)
+[View on GitHub Pages](https://masonrosenberger.github.io/product-landing-page)
 
 ---
 
