@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>surfXsurfboard — Hybrid Surfboards</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header id="header">
+    <a href="#top" class="brand-link" aria-label="surfXsurfboard home">
+      <img src="Images/surfxsurfboard-logo.png" alt="surfXsurfboard logo" id="header-img" />
+    </a>
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#products" class="nav-link">Shop</a>
+      <a href="#video-section" class="nav-link">Watch</a>
+      <button class="cart-button" aria-haspopup="dialog" aria-controls="cart-drawer" aria-expanded="false">
+        Cart <span id="cart-count" class="badge">0</span>
+      </button>
+    </nav>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-title">
+      <h1 id="hero-title"><span class="brand">surf<span class="big-x">X</span>surfboard</span></h1>
+      <p>Hybrid boards shaped like a skateboard—built to surf. Lightweight, nimble, and ridiculously fun.</p>
+      <form id="form" action="https://www.freecodecamp.com/email-submit" method="post" class="inline-form">
+        <label for="email" class="sr-only">Email address</label>
+        <input id="email" type="email" name="email" placeholder="Get launch deals via email" required />
+        <input id="submit" type="submit" value="Notify Me" />
+      </form>
+    </section>
+
+    <!-- Features -->
+    <section id="features" class="features" aria-label="Features">
+      <div class="feature">
+        <h2>Hybrid Shape</h2>
+        <p>Skateboard silhouette, surfboard soul—pop up fast and carve tight lines on mushy to moderate waves.</p>
+      </div>
+      <div class="feature">
+        <h2>Carbon/EPS Build</h2>
+        <p>EPS core with carbon reinforcement and epoxy glassing for flex, strength, and durability.</p>
+      </div>
+      <div class="feature">
+        <h2>Travel-Friendly</h2>
+        <p>Compact footprint fits small cars and apartments. Less hassle, more water time.</p>
+      </div>
+    </section>
+
+    <!-- Products -->
+    <section id="products" class="products" aria-label="Products">
+      <header class="section-head">
+        <h2>Shop Boards</h2>
+        <p>Three tuned models. Pick your size, set your quantity, and add to cart.</p>
+      </header>
+
+      <div class="product-grid">
+        <!-- Product 1 -->
+        <article class="product-card" data-id="fusion-x">
+          <img src="Images/fusion-x.png" alt="Fusion X hybrid surfboard" class="product-img" />
+          <div class="product-body">
+            <h3>Fusion X</h3>
+            <p class="sub">All-around daily rider—stable, poppy, and quick.</p>
+            <ul class="bullets">
+              <li>Carbon-reinforced EPS + Epoxy</li>
+              <li>Quad fin setup (FCS-compatible)</li>
+              <li>Textured deck for barefoot grip</li>
+            </ul>
+            <div class="options">
+              <label>
+                Size
+                <select class="size-select">
+                  <!-- Typical surf sizes, adapted for a compact hybrid outline -->
+                  <option value="5'4">5'4"</option>
+                  <option value="5'8" selected>5'8"</option>
+                  <option value="6'0">6'0"</option>
+                </select>
+              </label>
+              <label>
+                Qty
+                <input type="number" class="qty-input" value="1" min="1" />
+              </label>
+            </div>
+            <div class="price-row">
+              <span class="price" data-price="700">$700</span>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 2 -->
+        <article class="product-card" data-id="fusion-night-x">
+          <img src="Images/fusion-night-x.png" alt="Fusion Night X hybrid surfboard" class="product-img" />
+          <div class="product-body">
+            <h3>Fusion Night X</h3>
+            <p class="sub">Performance tuned—livelier rocker and a touch more bite.</p>
+            <ul class="bullets">
+              <li>Vacuum-bagged carbon skins</li>
+              <li>Progressive concave for faster rail-to-rail</li>
+              <li>Reinforced tail block for added drive</li>
+            </ul>
+            <div class="options">
+              <label>
+                Size
+                <select class="size-select">
+                  <option value="5'6">5'6"</option>
+                  <option value="5'10" selected>5'10"</option>
+                  <option value="6'2">6'2"</option>
+                </select>
+              </label>
+              <label>
+                Qty
+                <input type="number" class="qty-input" value="1" min="1" />
+              </label>
+            </div>
+            <div class="price-row">
+              <span class="price" data-price="800">$800</span>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Product 3 -->
+        <article class="product-card" data-id="skate-fusion-x">
+          <img src="Images/skate-fusion-x.png" alt="Skate Fusion X hybrid surfboard" class="product-img" />
+          <div class="product-body">
+            <h3>Skate Fusion X</h3>
+            <p class="sub">Beginner-friendly—super forgiving and insanely fun in small waves.</p>
+            <ul class="bullets">
+              <li>Durable EPS + Epoxy layup</li>
+              <li>Generous volume for easy paddling</li>
+              <li>Single to double concave for stability</li>
+            </ul>
+            <div class="options">
+              <label>
+                Size
+                <select class="size-select">
+                  <option value="5'0">5'0"</option>
+                  <option value="5'4" selected>5'4"</option>
+                  <option value="5'8">5'8"</option>
+                </select>
+              </label>
+              <label>
+                Qty
+                <input type="number" class="qty-input" value="1" min="1" />
+              </label>
+            </div>
+            <div class="price-row">
+              <span class="price" data-price="400">$400</span>
+              <button class="btn add-to-cart">Add to Cart</button>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Video -->
+    <section id="video-section" aria-labelledby="video-title">
+      <h2 id="video-title">Watch the surfXsurfboard perform</h2>
+      <div class="video-wrapper">
+        <video
+          id="video"
+          playsinline
+          controls
+          preload="metadata"
+          poster="data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'><defs><linearGradient id='g' x1='0' y1='0' x2='1' y2='1'><stop offset='0' stop-color='%23eaf2ff'/><stop offset='1' stop-color='%23f5f7fb'/></linearGradient></defs><rect width='1600' height='900' fill='url(%23g)'/><circle cx='800' cy='420' r='64' fill='%232a67c7'/><polygon points='780,390 840,420 780,450' fill='%23ffffff'/><text x='50%' y='55%' text-anchor='middle' font-family='system-ui, Arial, sans-serif' font-size='48' fill='%232a67c7'>SURFX PRODUCT VIDEO</text></svg>"
+        >
+          <source src="Video/surfing-video.mp4" type="video/mp4" />
+          Sorry, your browser doesn’t support embedded videos.
+        </video>
+      </div>
+    </section>
+
+
+    <!-- Checkout Section -->
+    <section id="checkout" class="checkout" aria-label="Checkout">
+      <header class="section-head"><h2>Checkout</h2></header>
+      <div class="checkout-body">
+        <p>Review your cart and complete your purchase. (Demo checkout for portfolio—no payment collected.)</p>
+        <button class="btn outline" id="go-to-cart">Review Cart</button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Cart Drawer -->
+  <aside id="cart-drawer" class="cart-drawer" role="dialog" aria-modal="true" aria-labelledby="cart-title" hidden>
+    <div class="cart-panel">
+      <header class="cart-header">
+        <h2 id="cart-title">Your Cart</h2>
+        <button class="icon-btn" id="close-cart" aria-label="Close cart">✕</button>
+      </header>
+      <div id="cart-items" class="cart-items" aria-live="polite"></div>
+      <footer class="cart-footer">
+        <div class="totals">
+          <div><span>Subtotal</span><strong id="subtotal">$0</strong></div>
+          <div class="muted">Tax & shipping calculated at checkout</div>
+        </div>
+        <div class="cart-actions">
+          <a href="#checkout" class="btn block" id="checkout-btn">Checkout</a>
+          <button class="btn ghost block" id="clear-cart">Clear Cart</button>
+        </div>
+      </footer>
+    </div>
+    <div class="cart-scrim" id="cart-scrim" aria-hidden="true"></div>
+  </aside>
+
+  <footer>
+    <p>&copy; 2025 surf<span class="big-x">X</span>surfboard. All rights reserved.</p>
+  </footer>
+
+  <script src="shop.js" defer></script>
+</body>
+</html>
